@@ -1,0 +1,148 @@
+.need-inner-right p {
+    color: #fff;
+}
+
+
+.total-tb .mySwiper .swiper-slide {
+    background: #fff;
+    backdrop-filter: blur(30px);
+    border-radius: 0;
+    opacity: 1 !important;
+    padding: 12px 52px;
+    width: auto !important;
+    cursor: pointer;
+}
+.total-tb .mySwiper .swiper-slide h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #55b56d;
+    text-align: center;
+    margin-bottom: 0;
+}
+.total-tb .mySwiper .swiper-slide-thumb-active h6 {
+    color: #fff;
+}
+.total-tb .mySwiper .swiper-wrapper {
+    width: 89%;
+}
+/*.our-leads-inner img {
+        height: auto;
+    }*/
+.total-tb .mySwiper .swiper-button-next:after,
+.total-tb .swiper-button-prev:after {
+    font-size: 25px;
+    color: #ffffff;
+}
+.total-tb .swiper {
+    width: 100%;
+    height: 100%;
+}
+.total-tb .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-tb .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.total-tb .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.total-tb .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.total-tb .mySwiper2 {
+    height: 80%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 0;
+    margin: 0 auto;
+    max-width: 1090px;
+}
+
+
+.active-main-left img {
+    max-width: 100%;
+}
+
+.total-tb .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.total-tb .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.total-tb .mySwiper2 .swiper-slide {
+    width: 104% !important;
+    width: 100% !important;
+}
+.total-tb .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    background-color: #55b56d;
+}
+.total-tb .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.total-tb .mySwiper2 .swiper-button-next:after,
+.total-tb .swiper-button-prev:after {
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #55b56d;
+    padding: 9px 12px;
+    border-radius: 0;
+}
+
+
+.have-right ul {
+    margin: 0;
+}
+
+.have-right ul li img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.have-right ul {
+    padding: 0;
+    margin: 0;
+}
+
+.have-right ul li {
+    line-height: 38px;
+    color: #fff;
+}
+
+
+.active-main {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@media(max-width:1200px) and(min-width:992px) {
+    .total-tb .mySwiper .swiper-slide {
+
+        padding: 12px 24px;
+
+    }
+}

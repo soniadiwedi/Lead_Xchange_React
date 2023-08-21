@@ -1,0 +1,37 @@
+.logine {
+  border-radius: 25px;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  border: 1px solid #e1dcdc;
+  padding-bottom: 20px;
+  background-color: #fff;
+  /*box-shadow: 0px 0px 4px 2px #00a1e040;*/
+  box-shadow: 0 0 5px 1px #e2e2e2;
+  position: relative;
+}
+.logine label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+}
+label.form-check-label {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+form.logine .form-control {
+  height: 38px;
+  border-radius: 14px;
+}
+.logine button {
+  padding: 7px 124px;
+  color: #fff;
+  background-color: #1f4572;
+  border-color: #1f4572;
+  margin-top: 15px;
+  border-radius: 14px;
+}
+.logine button:hover {
+  color: #fff;
+  background-color: #1f4572;
+}

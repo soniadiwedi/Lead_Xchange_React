@@ -1,0 +1,21 @@
+.tb-slct select {
+  width: 165px;
+  margin-top: 14px;
+}
+
+.horizontal-menu
+  .top-navbar
+  .navbar-menu-wrapper
+  .navbar-nav
+  .nav-item.nav-profile
+  .nav-profile-img
+  h5 {
+  background-color: #f7a600;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  padding: 8px 14px;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,30 @@
+.footer {
+  background: #1f4572;
+  border-top: 1px solid #1f4572;
+  padding: 16px 1rem;
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  font-size: calc(0.875rem - 0.05rem);
+  font-family: "ubuntu-regular", sans-serif;
+  color: #fff;
+}
+
+.text-muted,
+.preview-list .preview-item .preview-item-content p .content-category,
+.email-wrapper
+  .mail-sidebar
+  .menu-bar
+  .profile-list-item
+  a
+  .user
+  .u-designation,
+.email-wrapper .mail-list-container .mail-list .content .message_text,
+.email-wrapper .mail-list-container .mail-list .details .date {
+  color: #fff !important;
+}
+.footer a {
+  color: #24baef;
+  font-size: inherit;
+}

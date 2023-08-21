@@ -1,0 +1,86 @@
+.frg-btn {
+  text-decoration: none;
+}
+.sales-rights {
+  background-position: center;
+  background-size: cover;
+  animation: image 2s infinite alternate;
+  overflow-x: hidden;
+}
+
+@keyframes image {
+  0% {
+    background-image: url("../../assets/images/login-1.png");
+  }
+  25% {
+    background-image: url("../../assets/images/login-1.png");
+  }
+  50% {
+    background-image: url("../../assets/images/login-1.png");
+  }
+  100% {
+    background-image: url("../../assets/images/login-1.png");
+  }
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.sales-left {
+  /* background-color: #000B30;*/
+  padding-top: 100px;
+  height: 91.5vh;
+}
+.sales-left img {
+  width: 145px;
+  margin: 0 auto 25px;
+  display: block;
+}
+.sales-right img {
+  width: 100%;
+  height: 91.5vh;
+  margin: 0 auto;
+  display: block;
+}
+.cpoy ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+  color: #d9a91d;
+  padding-right: 37px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+.sales-left1 {
+  padding: 0px;
+}
+.sales-right1 {
+  padding: 0px;
+}
+.remember label {
+  margin-bottom: 0px;
+}
+.frg-btn h6 {
+  text-align: center;
+  margin: 10px 0px;
+  color: #f7a600;
+}
+
+.frg-btns {
+  position: absolute;
+  top: 133px;
+  right: 28px;
+  text-decoration: none;
+}
+.frg-btns h6 {
+  font-size: 10px;
+  color: #000;
+}
+
+.sales {
+  overflow-x: hidden;
+}
