@@ -17,10 +17,25 @@ import "./index.css";
 import auth from "../services/authServices";
 
 // Public Pages
-import { Home, Signin, Signup, Error, Admin } from "./../pages/";
+import { Home, Signin, Signup, Error, Jobs, News, Admin } from "./../pages/";
 
 // Admin Pages
-import { Panel as AdminPanel } from "../dashboard/AdminDashboard/pages";
+import {
+  Panel as AdminPanel,
+  Users,
+  Requirement,
+  Domain,
+  Manage,
+  Investors,
+  Subscription,
+  Cms,
+  Members,
+  Testimonial,
+  Faq,
+  Awards,
+  Blogs,
+  Contact,
+} from "../dashboard/AdminDashboard/pages";
 
 // Dashboard Pages
 import { AdminDashboard } from "../dashboard";
@@ -29,8 +44,8 @@ import { AdminDashboard } from "../dashboard";
 import { Footer, Navbar } from "./../components/";
 import Logout from "../common/logout";
 import AdminPrivateRoute from "./PrivateRoute/AdminPrivateRoute";
-import { Jobs } from "../pages/Jobs/Jobs";
-import { News } from "../pages/News/News";
+import { UserForm } from "../forms";
+import Requirements from "../forms/Requirements/Requirements";
 
 function RootNavigation() {
   const [user, setUser] = useState(null);
@@ -67,8 +82,8 @@ function RootNavigation() {
           path="/"
           element={<Home funcNav={setShowNav} funcFooter={setShowFooter} />}
         />
-        <Route path="/jobs" element={<Jobs/>}/>
-        <Route path="/news" element={<News/>}/>
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/news" element={<News />} />
         {/* Public Routes Ended */}
 
         {/* Admin Routes Started*/}
@@ -86,7 +101,27 @@ function RootNavigation() {
         >
           {" "}
           <Route index element={<AdminPanel />} />
+          <Route path="users" element={<Users />} />
+          <Route path="users/:id" element={<UserForm />} />
+          <Route path="requirement" element={<Requirement />} />
+          <Route path="requirement/:id" element={<Requirements />} />
+          <Route path="domain" element={<Domain/>} />
+          <Route path="domain/:id" element={<Domain/>} />
+          <Route path="manage" element={<Manage/>} />
+          <Route path="investors" element={<Investors/>}/>
+          <Route path="subscription" element={<Subscription/>}/>
+          <Route path="cms" element={<Cms/>}/>
+          <Route path="members" element={<Members/>}/>
+          <Route path="testimonial" element={<Testimonial/>}/>
+          <Route path="awards" element={<Awards/>}/>
+          <Route path="faq" element={<Faq/>}/>
+          <Route path="blogs" element={<Blogs/>}/>
+          <Route path="contact" element={<Contact/>}/>
+       
+          <Route path="*" element={<Error />} />
         </Route>
+        {/* Error Pages */}
+        <Route path="*" element={<Error />} />
       </Routes>
 
       {showFooter && <Footer />}

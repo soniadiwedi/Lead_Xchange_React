@@ -6,14 +6,11 @@ const SearchBox = ({ value, onChange }) => {
   };
 
   return (
-    <input
-      type="text"
-      name="query"
-      className="form-control my-3"
-      placeholder="Search..."
-      value={value}
-      onChange={handleInputChange}
-    />
+    <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" value={value}
+      onChange={handleInputChange}/>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
+ </div>
   );
 };
 
