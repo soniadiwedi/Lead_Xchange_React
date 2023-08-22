@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,9 +9,9 @@ const Header = () => {
           <div className="source-box">
             <div className="source-top d-flex">
               <h3>All Team Members</h3>
-              <a class="btn-bulk" href="#">
+              <Link class="btn-bulk" to="new">
                 <i class="fa fa-plus" aria-hidden="true"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
