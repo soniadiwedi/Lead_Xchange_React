@@ -1,7 +1,9 @@
 import React from "react";
 import  Latest  from "./Latest";
 
-const News = () => {
+const News = ({funcNav, funcFooter}) => {
+  funcNav(true);
+  funcFooter(true);
   return (
     <>
       <section class="blog-banner">

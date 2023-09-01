@@ -13,7 +13,9 @@ import { Partners } from './Partners';
 import { Events } from './Events';
 import { Testimonials } from './Testimonials';
 
-const Home = () => {
+const Home = ({funcNav, funcFooter}) => {
+  funcNav(true);
+  funcFooter(true);
   return (
     <>
     <Hero />

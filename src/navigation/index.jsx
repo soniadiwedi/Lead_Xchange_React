@@ -44,7 +44,20 @@ import { AdminDashboard } from "../dashboard";
 import { Footer, Navbar } from "./../components/";
 import Logout from "../common/logout";
 import AdminPrivateRoute from "./PrivateRoute/AdminPrivateRoute";
-import { AwardsForm, BlogsForm, CmsForm, ContactForm, FaqForms, InvestorsForm, JobsForm, MembersForm, RequirementsForm, SubscriptionForm, TestimonialForm, UserForm } from "../forms";
+import {
+  AwardsForm,
+  BlogsForm,
+  CmsForm,
+  ContactForm,
+  FaqForms,
+  InvestorsForm,
+  JobsForm,
+  MembersForm,
+  RequirementsForm,
+  SubscriptionForm,
+  TestimonialForm,
+  UserForm,
+} from "../forms";
 function RootNavigation() {
   const [user, setUser] = useState(null);
   const [showNav, setShowNav] = useState(true);
@@ -80,8 +93,14 @@ function RootNavigation() {
           path="/"
           element={<Home funcNav={setShowNav} funcFooter={setShowFooter} />}
         />
-        <Route path="/jobs" element={<Jobs />} />
-        <Route path="/news" element={<News />} />
+        <Route
+          path="/jobs"
+          element={<Jobs funcNav={setShowNav} funcFooter={setShowFooter} />}
+        />
+        <Route
+          path="/news"
+          element={<News funcNav={setShowNav} funcFooter={setShowFooter} />}
+        />
         {/* Public Routes Ended */}
 
         {/* Admin Routes Started*/}
@@ -103,29 +122,28 @@ function RootNavigation() {
           <Route path="users/:id" element={<UserForm />} />
           <Route path="requirement" element={<Requirement />} />
           <Route path="requirement/:id" element={<RequirementsForm />} />
-          <Route path="domain" element={<Domain/>} />
-          <Route path="domain/:id" element={<Domain/>} />
-          <Route path="manage" element={<Manage/>} />
-          <Route path="manage/:id" element={<JobsForm/>} />
-          <Route path="investors" element={<Investors/>}/>
-          <Route path="investors/:id" element={<InvestorsForm/>}/>
-          <Route path="subscription" element={<Subscription/>}/>
-          <Route path="subscription/:id" element={<SubscriptionForm/>}/>
-          <Route path="cms" element={<Cms/>}/>
-          <Route path="cms/:id" element={<CmsForm/>}/>
-          <Route path="members" element={<Members/>}/>
-          <Route path="members/:id" element={<MembersForm/>}/>
-          <Route path="testimonial" element={<Testimonial/>}/>
-          <Route path="testimonial/:id" element={<TestimonialForm/>}/>
-          <Route path="awards" element={<Awards/>}/>
-          <Route path="awards/:id" element={<AwardsForm/>}/>
-          <Route path="faq" element={<Faq/>}/>
-          <Route path="faq/:id" element={<FaqForms/>}/>
-          <Route path="blogs" element={<Blogs/>}/>
-          <Route path="blogs/:id" element={<BlogsForm/>}/>
-          <Route path="contact" element={<Contact/>}/>
-          <Route path="contact/:id" element={<ContactForm/>}/>
-       
+          <Route path="domain" element={<Domain />} />
+          <Route path="domain/:id" element={<Domain />} />
+          <Route path="manage" element={<Manage />} />
+          <Route path="manage/:id" element={<JobsForm />} />
+          <Route path="investors" element={<Investors />} />
+          <Route path="investors/:id" element={<InvestorsForm />} />
+          <Route path="subscription" element={<Subscription />} />
+          <Route path="subscription/:id" element={<SubscriptionForm />} />
+          <Route path="cms" element={<Cms />} />
+          <Route path="cms/:id" element={<CmsForm />} />
+          <Route path="members" element={<Members />} />
+          <Route path="members/:id" element={<MembersForm />} />
+          <Route path="testimonial" element={<Testimonial />} />
+          <Route path="testimonial/:id" element={<TestimonialForm />} />
+          <Route path="awards" element={<Awards />} />
+          <Route path="awards/:id" element={<AwardsForm />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="faq/:id" element={<FaqForms />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="blogs/:id" element={<BlogsForm />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="contact/:id" element={<ContactForm />} />
           <Route path="*" element={<Error />} />
         </Route>
         {/* Error Pages */}

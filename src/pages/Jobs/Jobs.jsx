@@ -1,6 +1,8 @@
 import React from "react";
 
-const Jobs = () => {
+const Jobs = ({funcNav, funcFooter}) => {
+  funcNav(true);
+  funcFooter(true);
   return (
     <>
       <section class="blog-banner">
